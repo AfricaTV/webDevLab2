@@ -27,24 +27,6 @@
   pointer-events: none;
 }
 
-/* old monitor scanlines */
-.scanline {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15) 1px,
-    transparent 1px,
-    transparent 2px
-  );
-  z-index: 1000;
-}
-
 /* vignette on edges */
 .terminal::before {
   content: '';

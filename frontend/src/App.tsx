@@ -102,7 +102,6 @@ function App() {
       const response = await fetch(`${API_URL}/api/health`)
       if (response.ok) {
         setBackendStatus('online')
-        // load language list
         const langResponse = await fetch(`${API_URL}/api/languages`)
         if (langResponse.ok) {
           const data = await langResponse.json()
